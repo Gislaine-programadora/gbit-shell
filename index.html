@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gbit Shell — O Terminal Moderno para Desenvolvedores Web3</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .code-font {
+            font-family: 'Fira Code', monospace;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(168, 85, 247, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-purple-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-purple-500/30">
+                    <i data-lucide="terminal" class="w-5 h-5 text-white"></i>
+                </div>
+                <span class="font-bold text-lg tracking-wider bg-gradient-to-r from-white via-slate-200 to-purple-400 bg-clip-text text-transparent">GBIT SHELL</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="https://www.npmjs.com/package/gbit-shell" target="_blank" class="hidden sm:inline-flex items-center space-x-2 text-sm text-slate-400 hover:text-white transition">
+                    <i data-lucide="package" class="w-4 h-4 text-purple-400"></i>
+                    <span>v1.0.0</span>
+                </a>
+                <a href="https://github.com/Gislaine-programadora/gbit-shell" target="_blank" class="flex items-center space-x-2 bg-slate-900 hover:bg-slate-800 border border-slate-700/60 px-4 py-2 rounded-lg text-sm font-medium transition shadow-sm">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-44 md:pb-32 px-6 relative overflow-hidden">
+        <!-- Background Glow Orbs -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/15 blur-[140px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-indigo-600/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center space-x-2 bg-purple-500/10 border border-purple-500/20 px-3.5 py-1.5 rounded-full text-xs font-medium text-purple-300 mb-8 backdrop-blur-sm">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>Disponível oficialmente no NPM Registry</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                O Terminal Definitivo para <br class="hidden sm:inline"/>
+                <span class="bg-gradient-to-r from-purple-400 via-indigo-300 to-pink-400 bg-clip-text text-transparent">Ecossistemas Web3 & Full-Stack</span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-normal">
+                Uma experiência de terminal inteligente, customizável, integrada com git, gerenciamento de projetos e suporte total ao ecossistema moderno.
+            </p>
+
+            <!-- Install Box -->
+            <div class="max-w-md mx-auto bg-slate-900/90 border border-slate-800 p-2 rounded-2xl flex items-center justify-between shadow-2xl mb-12 glow-effect">
+                <div class="flex items-center space-x-3 px-3 code-font text-sm text-purple-300">
+                    <span class="text-slate-600">$</span>
+                    <span>npm install -g gbit-shell</span>
+                </div>
+                <button onclick="navigator.clipboard.writeText('npm install -g gbit-shell'); alert('Comando copiado!');" class="bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-xl text-xs font-semibold transition cursor-pointer flex items-center space-x-1.5">
+                    <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                    <span>Copiar</span>
+                </button>
+            </div>
+
+            <!-- Ecosystem Badges (Terminal, VS Code, GitHub) -->
+            <div class="flex flex-wrap justify-center items-center gap-6 text-slate-400 text-sm font-medium">
+                <div class="flex items-center space-x-2 bg-slate-900/60 border border-slate-800 px-4 py-2 rounded-xl">
+                    <i data-lucide="terminal" class="w-4 h-4 text-purple-400"></i>
+                    <span>Terminal Integrado</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-slate-900/60 border border-slate-800 px-4 py-2 rounded-xl">
+                    <i data-lucide="code" class="w-4 h-4 text-blue-400"></i>
+                    <span>VS Code Extension</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-slate-900/60 border border-slate-800 px-4 py-2 rounded-xl">
+                    <i data-lucide="git-branch" class="w-4 h-4 text-pink-400"></i>
+                    <span>Git & Branch Status</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Mockup Section -->
+    <section class="py-12 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl overflow-hidden">
+                <!-- Terminal Window Header -->
+                <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                    </div>
+                    <div class="text-xs text-slate-400 code-font flex items-center space-x-2">
+                        <i data-lucide="terminal" class="w-3.5 h-3.5 text-purple-400"></i>
+                        <span>gbit-shell — bash</span>
+                    </div>
+                    <div class="w-12"></div>
+                </div>
+                <!-- Terminal Body Content -->
+                <div class="p-6 code-font text-sm text-slate-300 space-y-3 bg-slate-900/50">
+                    <div class="text-slate-500"># Inicializando o ambiente Gbit Shell</div>
+                    <div><span class="text-emerald-400">gislaine@DESKTOP-D1QAMU7</span> &nbsp; <span class="text-purple-400 font-bold">GBIT</span> &nbsp; <span class="text-blue-400">~/web3-hub</span> <span class="text-pink-400">(main)</span></div>
+                    <div class="text-slate-100 flex items-center space-x-2">
+                        <span class="text-purple-400">❯</span>
+                        <span>gbit --version</span>
+                    </div>
+                    <div class="text-slate-400">Gbit Shell CLI v1.0.0 - Ready for Web3 & Full-Stack</div>
+                    <div class="text-slate-100 flex items-center space-x-2 pt-2">
+                        <span class="text-purple-400">❯</span>
+                        <span class="animate-pulse">_</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-24 px-6 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight mb-4">Projetado para Produtividade Máxima</h2>
+                <p class="text-slate-400">Recursos pensados por desenvolvedores para otimizar o seu fluxo diário de código.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl hover:border-purple-500/50 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mb-6 text-purple-400">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Comandos Rápidos & Aliases</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Configure atalhos inteligentes no arquivo <code class="code-font text-purple-300 text-xs bg-slate-800 px-1.5 py-0.5 rounded">gbit.json</code> para automatizar suas tarefas comuns como build e deploy.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl hover:border-purple-500/50 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center mb-6 text-indigo-400">
+                        <i data-lucide="code" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Integração com VS Code</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Desfrute de suporte a extensões e uma interface de terminal fluida direto no seu editor favorito.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl hover:border-purple-500/50 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center mb-6 text-pink-400">
+                        <i data-lucide="git-pull-request" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Monitor Git Nativo</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Acompanhe o branch atual, alterações pendentes e status do repositório diretamente no prompt de comando.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-900 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <span class="font-bold text-slate-300">Gbit Shell</span>
+                <span>© 2026 — Desenvolvido com dedicação por Gislaine.</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="https://github.com/Gislaine-programadora/gbit-shell" target="_blank" class="hover:text-slate-300 transition">GitHub</a>
+                <a href="https://www.npmjs.com/package/gbit-shell" target="_blank" class="hover:text-slate-300 transition">NPM</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
