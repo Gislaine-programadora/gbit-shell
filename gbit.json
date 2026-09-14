@@ -1,0 +1,14 @@
+{
+  "name": "gbit-shell",
+  "tag": "GBIT",
+  "aliases": {
+    "dev": "npm run dev",
+    "b": "npm run build"
+  },
+  "env": {},
+  "scripts": {
+    "publish": "ghpush -m 'chore: update'",
+    "install": "pip install -e .",
+    "test": "python -m pytest -q"
+  }
+}

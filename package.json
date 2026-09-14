@@ -1,0 +1,48 @@
+{
+  "name": "gbit-shell",
+  "version": "1.0.0",
+  "description": "GBit Shell — a modern, fast developer terminal with built-in GitHub publishing. Works standalone and as a VS Code integrated terminal profile",
+  "bin": {
+    "gbit": "bin/gbit.js",
+    "gbit-shell": "bin/gbit.js"
+  },
+  "main": "bin/gbit.js",
+  "scripts": {
+    "start": "node bin/gbit.js"
+  },
+  "files": [
+    "bin/",
+    "gbit_shell/",
+    "pyproject.toml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "shell",
+    "terminal",
+    "cli",
+    "repl",
+    "prompt",
+    "git",
+    "github",
+    "vscode",
+    "devtools",
+    "developer-tools"
+  ],
+  "author": "Gislaine",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "os": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gislaine-programadora/gbit-shell.git"
+  },
+  "preferGlobal": true,
+  "dependencies": {}
+}

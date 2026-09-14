@@ -1,0 +1,22 @@
+{
+  "terminal.integrated.profiles.windows": {
+    "GBit Shell": {
+      "path": "py",
+      "args": [
+        "-3",
+        "-m",
+        "gbit_shell",
+        "--no-banner"
+      ],
+      "icon": "terminal",
+      "overrideName": true,
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "GBIT_VSCODE": "1",
+        "GBIT_THEME": "gbit",
+        "GBIT_TAG": "GBIT"
+      }
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "GBit Shell"
+}

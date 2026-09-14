@@ -1,0 +1,143 @@
+{
+"name": "gbit-shell-terminal",
+"displayName": "GBit Shell",
+"description": "Adds GBit Shell as an integrated terminal profile in VS Code — modern prompt, git-aware, one-command GitHub publishing",
+"version": "1.0.0",
+"publisher": "gislaine",
+"license": "MIT",
+"engines": {
+"vscode": "^1.75.0"
+},
+"categories": [
+"Other",
+"SCM Providers"
+],
+"keywords": [
+"terminal",
+"shell",
+"git",
+"github",
+"prompt"
+],
+"main": "./extension.js",
+
+"activationEvents": [
+"onStartupFinished",
+"onTerminalProfile:gbit-shell.terminal-profile",
+"onCommand:gbit-shell.newTerminal",
+"onCommand:gbit-shell.splitTerminal",
+"onCommand:gbit-shell.publishToGitHub",
+"onCommand:gbit-shell.addProfile",
+"onCommand:gbit-shell.setDefault",
+"onCommand:gbit-shell.doctor"
+],
+
+"contributes": {
+"terminal": {
+"profiles": [
+{
+"id": "gbit-shell.terminal-profile",
+"title": "GBit Shell",
+"icon": "terminal"
+}
+]
+},
+
+
+"commands": [
+  {
+    "command": "gbit-shell.newTerminal",
+    "title": "GBit Shell: Novo terminal",
+    "category": "GBit Shell"
+  },
+  {
+    "command": "gbit-shell.splitTerminal",
+    "title": "GBit Shell: Novo terminal ao lado",
+    "category": "GBit Shell"
+  },
+  {
+    "command": "gbit-shell.publishToGitHub",
+    "title": "GBit Shell: Publicar no GitHub (ghpush)",
+    "category": "GBit Shell"
+  },
+  {
+    "command": "gbit-shell.addProfile",
+    "title": "GBit Shell: Adicionar perfil ao settings.json",
+    "category": "GBit Shell"
+  },
+  {
+    "command": "gbit-shell.setDefault",
+    "title": "GBit Shell: Definir como terminal padrao",
+    "category": "GBit Shell"
+  },
+  {
+    "command": "gbit-shell.doctor",
+    "title": "GBit Shell: Verificar instalacao",
+    "category": "GBit Shell"
+  }
+],
+
+"configuration": {
+  "title": "GBit Shell",
+  "properties": {
+    "gbitShell.pythonPath": {
+      "type": "string",
+      "default": "",
+      "description": "Caminho do Python usado para rodar o GBit Shell. Vazio = detectar automaticamente."
+    },
+    "gbitShell.theme": {
+      "type": "string",
+      "enum": [
+        "gbit",
+        "ocean",
+        "mono"
+      ],
+      "default": "gbit",
+      "description": "Tema de cores do prompt."
+    },
+    "gbitShell.showBanner": {
+      "type": "boolean",
+      "default": false,
+      "description": "Mostrar o logo do GBit ao abrir o terminal integrado. Desligado por padrao: o terminal abre limpo, como o Git Bash."
+    },
+    "gbitShell.promptTag": {
+      "type": "string",
+      "default": "GBIT",
+      "description": "Texto do selo exibido no prompt."
+    },
+    "gbitShell.showNodeBadge": {
+      "type": "boolean",
+      "default": false,
+      "description": "Mostrar o selo 'node' em projetos com package.json. Desligado por padrao para um prompt mais limpo."
+    },
+    "gbitShell.showGitStatus": {
+      "type": "boolean",
+      "default": true,
+      "description": "Mostrar o estado do git no prompt."
+    }
+  }
+},
+
+"menus": {
+  "scm/title": [
+    {
+      "command": "gbit-shell.publishToGitHub",
+      "group": "navigation"
+    }
+  ],
+  "terminal/context": [
+    {
+      "command": "gbit-shell.splitTerminal",
+      "group": "navigation"
+    }
+  ]
+}
+
+
+},
+
+"repository": {
+"type": "git",
+"url": "https://github.com/Gislaine-programadora/gbit-shell"
+}
+}

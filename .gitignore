@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+node_modules/
+*.vsix
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+.gbit-shell/
