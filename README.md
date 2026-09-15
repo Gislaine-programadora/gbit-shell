@@ -182,11 +182,26 @@ winget install --id GitHub.cli
 
 ---
 
-## O comando que dá nome ao projeto
+## 🚀 Como Enviar Projetos com 1 Comando para o github:
+
+O **Gbit Shell** integra automações inteligentes para você gerenciar seus repositórios no GitHub sem burocracia direto pelo terminal customizado **GBIT**.
+
+### Passo a Passo:
+
+1. **Faça login no GitHub (apenas na primeira vez):**
+  
+   
+   ```bash
+   gh auth login
+   
+2. ## Depois cria seu repositorio no github
+
+3. ## Com apenas esse comando ja gera a url e pronto, esta publicado: 
 
 ```bash
-ghpush
+ghpush  ghpush --remote https://github.com/seu-usuario/tv-online.git
 ```
+
 
 Um comando faz tudo o que normalmente são vários passos decorados: cria o repositório git se não existir, gera um `.gitignore` sensato, adiciona os arquivos, cria o commit, cria o repositório no GitHub e envia.
 
