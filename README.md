@@ -167,6 +167,10 @@ Nas configurações (`gbitShell.*`) dá pra escolher o Python, o tema, o texto d
 
 ### GitHub
 
+<p align="center">
+  <img src="./banner-github.png" alt="GBit Shell — Envie seu projeto para o GitHub" width="100%">
+</p>
+
 ### Requisitos
 
 Python 3.9 ou superior. Nada mais é obrigatório — o `git` só é necessário para os comandos de git, e o [gh CLI](https://cli.github.com) apenas se você quiser que o `ghpush` crie repositórios novos automaticamente.
