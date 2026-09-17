@@ -199,7 +199,7 @@ O **Gbit Shell** integra automações inteligentes para você gerenciar seus rep
 3. ## Com apenas esse comando ja gera a url e pronto, esta publicado: 
 
 ```bash
-ghpush  ghpush --remote https://github.com/seu-usuario/tv-online.git
+ghpush --remote https://github.com/seu-usuario/tv-online.git
 ```
 
 
