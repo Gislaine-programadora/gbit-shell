@@ -161,6 +161,26 @@ Se preferir não instalar a extensão, adicione isto ao `settings.json` do VS Co
 
 Nas configurações (`gbitShell.*`) dá pra escolher o Python, o tema, o texto do selo, e ligar/desligar o selo `node` ou o estado do git. O perfil gravado inclui `overrideName`, então a aba do terminal mostra "GBit Shell" em vez do nome do processo (`python`). A extensão também coloca um botão GBit na barra de status e um ícone de publicar no painel de controle de versão.
 
+## Visualize seu projeto Node.js ou HTML localmente com um único comando: serve.
+
+## Examplo:
+
+gislaine@DESKTOP-D1QAMU7 GBIT ~/web3-hub (main)
+❯ cd ecossistema-page
+
+gislaine@DESKTOP-D1QAMU7 GBIT ~/web3-hub/ecossistema-page (main)
+❯ serve
+[GBit] servindo . em http://localhost:8000
+(Ctrl+C para parar )
+
+Aviso: servidor sem autenticação — use apenas em rede local.
+Serving HTTP on :: port 8000
+(http://[::]:8000/ )
+
+Depois, abra no navegador:
+
+http://localhost:8000
+
 ---
 
 ## Comandos
