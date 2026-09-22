@@ -46,6 +46,8 @@ Cada trecho tem um propósito: usuário e máquina, o selo do projeto, o caminho
 
 ---
 
+## Usar dentro do VS Code
+ 
 ## Instalação
 
 **Via npx** — não instala nada permanentemente
@@ -74,30 +76,28 @@ python -m pip install --upgrade gbit-shell
 
 ### Abrir o terminal
 
-Depois de instalado, por qualquer um dos três caminhos:
+Depois de instalado, por qualquer um dos três caminhos, **dentro do terminal GBit Shell**, rode:
+
 
 ```bash
 gbit
 ```
 
-
----
-
-## Usar dentro do VS Code
-
-Adiciona o GBit Shell à lista de terminais integrados do VS Code, junto com PowerShell, cmd e Git Bash.
-
-### Instalar a extensão (recomendado)
-
-Depois de instalar o GBit Shell via npm ou pip, **dentro do terminal GBit Shell**, rode:
+## Vai abrir o terminal, o gbitshell para instalar a  extensao dentro do terminal roda agora:
 
 ```bash
 vscode
-```
 
-> ⚠️ O comando é `vscode`, digitado dentro do shell (`gbit` → `vscode`) — **não** `npx vscode`, que procura outro pacote npm diferente, sem relação com este projeto.
+---
 
-Isso gera o `.vsix` automaticamente (usando só Python, sem precisar de Node) e já instala no VS Code. Se o pacote não estiver instalado globalmente ainda, use o launcher temporário:
+Adiciona o GBit Shell à lista de terminais integrados do VS Code, junto com PowerShell, cmd e Git Bash. 
+
+### Instalar a extensão (recomendado)
+
+
+> ⚠️ O comando é `vscode`, digitado dentro do GBIT shell (`gbit` → `vscode`)`, 
+
+Isso gera o `.vsix` automaticamente (usando só Python, sem precisar de Node) e já instala no VS Code. Se o pacote não estiver instalado globalmente ainda, 
 
 ```bash
 npx gbit-shell vscode
