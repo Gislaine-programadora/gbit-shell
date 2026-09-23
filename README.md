@@ -76,7 +76,7 @@ python -m pip install --upgrade gbit-shell
 
 ### Abrir o terminal
 
-Depois de instalado, por qualquer um dos três caminhos, **dentro do terminal GBit Shell**, rode:
+Depois de instalado, por qualquer um dos três caminhos, rode:
 
 
 ```bash
