@@ -122,11 +122,7 @@ O GBit Shell irá:
 
 Depois, no VS Code:
 
-Ctrl + Shift + P
-
-Execute:
-
-Developer: Reload Window
+Adiciona o GBit Shell à lista de terminais integrados do VS Code, junto com PowerShell, cmd e Git Bash.
 
 Abra um novo terminal e selecione:
 
@@ -134,7 +130,17 @@ GBit Shell
 
 Pronto! 🎉-----
 
-## Adiciona o GBit Shell à lista de terminais integrados do VS Code, junto com PowerShell, cmd e Git Bash. 
+1. Clique na seta ao lado do `+`
+2. Escolha **GBit Shell**
+
+Pra torná-lo o terminal padrão: `Ctrl+Shift+P` → **GBit Shell: Definir como terminal padrão**.
+
+Depois de instalar, recarregue a janela (`Ctrl+Shift+P` → **Developer: Reload Window**). No painel do terminal:
+
+. Escolha **GBit Shell**
+
+
+_ _ _ 
 
 
 Se quiser só gerar o `.vsix` sem instalar:
@@ -149,12 +155,7 @@ O arquivo é salvo em `~/.gbit-shell/`. Pra instalar manualmente depois:
 code --install-extension ~/.gbit-shell/gislaine.gbit-shell-terminal-1.0.0.vsix
 ```
 
-Depois de instalar, recarregue a janela (`Ctrl+Shift+P` → **Developer: Reload Window**). No painel do terminal:
 
-1. Clique na seta ao lado do `+`
-2. Escolha **GBit Shell**
-
-Pra torná-lo o terminal padrão: `Ctrl+Shift+P` → **GBit Shell: Definir como terminal padrão**.
 
 ### Configuração manual (sem a extensão)
 
