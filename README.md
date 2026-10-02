@@ -566,7 +566,7 @@ MIT
 ## Autor
 
 Gislaine Lopes · gbit-ecossistema, open source
-📧 gislainelopes@gmail.co
+📧 gislainelopes@gmail.com
 
 
 
