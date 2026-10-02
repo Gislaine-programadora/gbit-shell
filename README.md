@@ -181,6 +181,10 @@ ghpush --remote https://github.com/usuario/repo.git   # usa um repositório já 
 
 Com um único comando, o `serve` sobe um servidor HTTP na pasta atual e abre seu HTML no navegador.
 
+```bash
+serve
+```
+
 ```
 gislaine@DESKTOP-D1QAMU7   GBIT   ~/web3-hub   (main)
 ❯ cd ecossistema-page
