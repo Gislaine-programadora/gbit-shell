@@ -59,32 +59,60 @@ O GBit Shell é um terminal moderno para desenvolvimento, criado para deixar seu
 Você pode instalar, abrir o terminal e instalar a extensão do VS Code diretamente pelo próprio GBit Shell.
 
 🛠️ 1. Instale o GBit Shell
-Via NPM
+
+```bash
+npx gbit-shell
+```
+
+
+```bash
 npm install -g gbit-shell
-Via Python / PyPI
+```
+
+
+```bash
 pip install gbit-shell
+```
 
-Para atualizar para a versão mais recente:
 
+```bash
 python -m pip install --upgrade gbit-shell
+```
+
+
 ⚡ 2. Abra o terminal GBit Shell
 
 Depois da instalação, execute:
 
+
+```bash
 gbit
+```
+
 
 O GBit Shell será iniciado no terminal:
 
 GBIT   ~/seu-projeto  (main)
 ❯
 
+
+
 Agora você está dentro do seu terminal GBit Shell. 🚀
+
 
 🧩 3. Instale a extensão no VS Code
 
 Com o GBit Shell aberto, execute:
 
+```bash
 vscode
+```
+ou 
+
+```bash
+npx gbit-shell vscode
+```
+
 
 O GBit Shell irá:
 
@@ -106,62 +134,8 @@ GBit Shell
 
 Pronto! 🎉-----
 
-## Usar dentro do VS Code
- 
-## Instalação
+## Adiciona o GBit Shell à lista de terminais integrados do VS Code, junto com PowerShell, cmd e Git Bash. 
 
-**Via npx** — não instala nada permanentemente
-
-```bash
-npx gbit-shell
-```
-
-**Via npm** — instalação global
-
-```bash
-npm install -g gbit-shell
-```
-
-**Via pip** — direto do PyPI
-
-```bash
-pip install gbit-shell
-```
-
-Na primeira execução via `npx` ou `npm`, as dependências Python são instaladas automaticamente. Pra atualizar depois:
-
-```bash
-python -m pip install --upgrade gbit-shell
-```
-
-### Abrir o terminal
-
-Depois de instalado, por qualquer um dos três caminhos, rode:
-
-
-```bash
-gbit
-```
-
-## Vai abrir o terminal, o gbitshell para instalar a  extensao dentro do terminal roda agora:
-
-```bash
-vscode
-
----
-
-Adiciona o GBit Shell à lista de terminais integrados do VS Code, junto com PowerShell, cmd e Git Bash. 
-
-### Instalar a extensão (recomendado)
-
-
-> ⚠️ O comando é `vscode`, digitado dentro do GBIT shell (`gbit` → `vscode`)`, 
-
-Isso gera o `.vsix` automaticamente (usando só Python, sem precisar de Node) e já instala no VS Code. Se o pacote não estiver instalado globalmente ainda, 
-
-```bash
-npx gbit-shell vscode
-```
 
 Se quiser só gerar o `.vsix` sem instalar:
 
