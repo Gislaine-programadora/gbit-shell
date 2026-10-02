@@ -44,7 +44,67 @@ gislaine@DESKTOP-D1QAMU7   GBIT   ~/web3-hub   (main)
   
 Cada trecho tem um propósito: usuário e máquina, o selo do projeto, o caminho encurtado, o estado do git (arquivos no stage, modificados, novos), o ambiente virtual do Python ativo, e a detecção de projeto Node.
 
----
+------
+
+🚀 GBit Shell — Seu Terminal Moderno para o VS Code
+
+<p align="center"> <strong>Inicie seu terminal GBit Shell dentro do VS Code e tenha comandos rápidos para desenvolvimento, servidores e GitHub.</strong> </p>
+
+<p align="center"> <img src="https://img.shields.io/badge/GBit%20Shell-Terminal-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/VS%20Code-Ready-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/GitHub-One%20Command-black?style=for-the-badge&logo=github"> <img src="https://img.shields.io/badge/Python-3.9%2B-yellow?style=for-the-badge&logo=python"> </p>
+
+✨ Inicie seu terminal GBit Shell para o VS Code
+
+O GBit Shell é um terminal moderno para desenvolvimento, criado para deixar seu fluxo de trabalho mais rápido e simples.
+
+Você pode instalar, abrir o terminal e instalar a extensão do VS Code diretamente pelo próprio GBit Shell.
+
+🛠️ 1. Instale o GBit Shell
+Via NPM
+npm install -g gbit-shell
+Via Python / PyPI
+pip install gbit-shell
+
+Para atualizar para a versão mais recente:
+
+python -m pip install --upgrade gbit-shell
+⚡ 2. Abra o terminal GBit Shell
+
+Depois da instalação, execute:
+
+gbit
+
+O GBit Shell será iniciado no terminal:
+
+GBIT   ~/seu-projeto  (main)
+❯
+
+Agora você está dentro do seu terminal GBit Shell. 🚀
+
+🧩 3. Instale a extensão no VS Code
+
+Com o GBit Shell aberto, execute:
+
+vscode
+
+O GBit Shell irá:
+
+✓ construir a extensão
+✓ gerar o arquivo .vsix
+✓ instalar a extensão no VS Code
+
+Depois, no VS Code:
+
+Ctrl + Shift + P
+
+Execute:
+
+Developer: Reload Window
+
+Abra um novo terminal e selecione:
+
+GBit Shell
+
+Pronto! 🎉-----
 
 ## Usar dentro do VS Code
  
