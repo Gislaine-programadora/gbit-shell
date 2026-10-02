@@ -42,7 +42,7 @@ gislaine@DESKTOP-D1QAMU7   GBIT   ~/web3-hub   (main)
 <div align="center">
 
   
-Cada trecho tem um propósito: usuário e máquina, o selo do projeto, o caminho encurtado, o estado do git (arquivos no stage, modificados, novos), o ambiente virtual do Python ativo, e a detecção de projeto Node.
+
 
 ------
 
