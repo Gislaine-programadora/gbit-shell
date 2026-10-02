@@ -48,7 +48,7 @@ gislaine@DESKTOP-D1QAMU7   GBIT   ~/web3-hub   (main)
 
 🚀 GBit Shell — Seu Terminal Moderno para o VS Code
 
-<p align="center"> <strong>Inicie seu terminal GBit Shell dentro do VS Code e tenha comandos rápidos para desenvolvimento, servidores e GitHub.</strong> </p>
+<p align="center"> <strong>terminal GBit Shell dentro do VS Code e tenha comandos rápidos para desenvolvimento, servidores e GitHub.</strong> </p>
 
 <p align="center"> <img src="https://img.shields.io/badge/GBit%20Shell-Terminal-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/VS%20Code-Ready-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/GitHub-One%20Command-black?style=for-the-badge&logo=github"> <img src="https://img.shields.io/badge/Python-3.9%2B-yellow?style=for-the-badge&logo=python"> </p>
 
