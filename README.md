@@ -16,11 +16,11 @@
   <img src="https://img.shields.io/badge/licenca-MIT-orange?style=for-the-badge" alt="licença MIT">
 </p>
 
-📦 [Pacote no NPM](https://www.npmjs.com/package/gbit-shell) · 💻 [Repositório no GitHub](https://github.com/Gislaine-web3)
-
 <div align="center">
 
 [![Website GitHub Pages](https://img.shields.io/badge/🌐_Acessar_Landing_Page-github.io-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white)](https://gislaine-web3.github.io/gbit-shell/)
+
+📦 [Pacote no NPM](https://www.npmjs.com/package/gbit-shell) · 💻 [Repositório no GitHub](https://github.com/Gislaine-web3)
 
 </div>
 ---
